@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  .logoGetup {
+    display: flex;
+    padding-top: 5rem;
+
+    strong {
+      font-size: 5.75rem;
+      color: var(--green);
+    }
+  }
+
+  section {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    align-content: center;
+    margin-top: -7rem;
+  }
+  @media (max-width: 700px) {
+    section {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 1fr 1fr;
+      gap: 6.25rem;
+      align-content: center;
+      margin-top: 7rem;
+    }
+  }
+}
