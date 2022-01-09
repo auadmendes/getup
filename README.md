@@ -29,3 +29,8 @@ do the challenges and grow your level.
 - 🙃 Fun fact I'm still thinking I am <b>copying code<b>
 
 
+#Images
+  
+ 
+  <img width="1632" alt="GetUp2" src="https://user-images.githubusercontent.com/5294488/148702423-ee0690c8-1607-440c-a0c4-fc0140b23ce6.png">
+<img width="1670" alt="GetUp3" src="https://user-images.githubusercontent.com/5294488/148702435-b6874d46-f7c4-4de5-86c6-4b835712c7bb.png">
