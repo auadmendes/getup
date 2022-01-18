@@ -1,19 +1,51 @@
 import { useContext } from 'react';
 import { ChallengesContext } from '../contexts/ChallengesContext';
-
+import { signIn, signOut, useSession } from "next-auth/react"
+import { FaUser } from "react-icons/fa";
 import styles from '../styles/components/Profile.module.scss';
 
+
 export function Profile() {
+  const { data: session } = useSession();
   const { level } = useContext(ChallengesContext);
+
+
+  //logar
+  function handleLoginNext() {
+    signIn();
+  }
 
   return (
     <div className={styles.profileContainer}>
-      <img src="https://github.com/auadmendes.png" alt="Luciano Mendes" />
+      <div className={styles.profileImage}>
+        {session !== null ? (
+          <img src={session?.user.image} alt={session?.user.name} />
+        ) : (
+          <FaUser size={35} />
+        )}
+      </div>
       <div>
-        <strong>Luciano Mendes</strong>
+        {session !== null ? (
+          <strong>{session?.user.name}</strong>
+        ) : (
+          <button
+            type='button'
+            className={styles.profileLoginButton}
+            onClick={handleLoginNext}
+          >
+            Log in
+          </button>
+        )}
         <p>
           <img src="icons/level.svg" alt="Level" />
-          Level {level}
+          {session !== null ? (
+            <div className={styles.levelBox}>
+              Level {level}
+              <a href="" onClick={() => signOut()}>Signout</a>
+            </div>
+          ) : (
+            <span>Your level goes here</span>
+          )}
         </p>
       </div>
     </div>

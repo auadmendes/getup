@@ -2,11 +2,30 @@
   display: flex;
   align-items: center;
 
+  .profileImage {
+    width: 5.7rem;
+    height: 5.7rem;
+    border-radius: 50%;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   img {
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;
   }
+
+  .profileLoginButton {
+    width: 12rem;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background: var(--green);
+  }
+
   > div {
     margin-left: 1.5rem;
 
@@ -19,6 +38,18 @@
     p {
       font-size: 1rem;
       margin-top: 0.5rem;
+      display: flex;
+
+      .levelBox {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          color: var(--blue);
+          font-size: 0.85rem;
+          cursor: pointer;
+        }
+      }
 
       img {
         margin-right: 0.5rem;

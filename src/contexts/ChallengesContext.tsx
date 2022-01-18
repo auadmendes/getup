@@ -104,6 +104,7 @@ export function ChallengesProvider({
   function closeLevelUpModal() {
     setIsLevelUpModalOpen(false);
   }
+
   return (
     <ChallengesContext.Provider
       value={{
@@ -116,7 +117,7 @@ export function ChallengesProvider({
         startNewChallenge,
         resetChallenge,
         completeChallenge,
-        closeLevelUpModal
+        closeLevelUpModal,
       }}>
       {children}
       {isLevelUpModalOpen && <LevelUpModal />}

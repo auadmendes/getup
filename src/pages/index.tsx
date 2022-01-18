@@ -11,6 +11,7 @@ import { GetServerSideProps } from 'next';
 import styles from '../styles/pages/Home.module.scss';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 
+
 interface HomeProps {
   level: number;
   currentExperience: number;
