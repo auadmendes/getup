@@ -91,7 +91,7 @@ export default NextAuth({
     // async redirect({ url, baseUrl }) { return baseUrl },
     // async session({ session, token, user }) { return session },
     // async jwt({ token, user, account, profile, isNewUser }) { return token }
-    async redirect({ url, baseUrl }) { return baseUrl },
+    // async redirect({ url, baseUrl }) { return baseUrl },
   },
 
   // Events are useful for logging
