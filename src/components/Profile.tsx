@@ -9,7 +9,6 @@ export function Profile() {
   const { data: session } = useSession();
   const { level } = useContext(ChallengesContext);
 
-
   //logar
   function handleLoginNext() {
     signIn();
@@ -33,7 +32,7 @@ export function Profile() {
             className={styles.profileLoginButton}
             onClick={handleLoginNext}
           >
-            Log in
+            Sign in
           </button>
         )}
         <p>
