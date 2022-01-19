@@ -9,6 +9,7 @@ export function Profile() {
   const { data: session } = useSession();
   const { level } = useContext(ChallengesContext);
 
+
   //logar
   function handleLoginNext() {
     signIn();
