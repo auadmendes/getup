@@ -33,7 +33,7 @@ export function Profile() {
             className={styles.profileLoginButton}
             onClick={handleLoginNext}
           >
-            Sign in on Get Up
+            Sign in
           </button>
         )}
         <p>
