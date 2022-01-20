@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ChallengesContext } from '../contexts/ChallengesContext';
 import { signIn, signOut, useSession } from "next-auth/react"
 import { FaUser } from "react-icons/fa";
@@ -8,11 +8,14 @@ import styles from '../styles/components/Profile.module.scss';
 export function Profile() {
   const { data: session } = useSession();
   const { level } = useContext(ChallengesContext);
+  const [profile, setProfile] = useState({});
 
 
   //logar
-  function handleLoginNext() {
-    signIn();
+  async function handleLoginNext() {
+    await signIn();
+    console.log(signIn);
+    console.log('Sessão: ' + session);
   }
 
   return (
