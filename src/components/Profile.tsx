@@ -15,7 +15,7 @@ export function Profile() {
   async function handleLoginNext() {
     await signIn();
     console.log(signIn);
-    console.log('Sessão: ' + session);
+    console.log('Sessão: ' + session.user);
   }
 
   return (
