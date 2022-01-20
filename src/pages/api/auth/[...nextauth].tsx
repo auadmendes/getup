@@ -13,11 +13,11 @@ export default NextAuth({
     // Temporarily removing the Apple provider from the demo site as the
     // callback URL for it needs updating due to Vercel changing domains
     */
-    GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-      // https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps
-    }),
+    // GithubProvider({
+    //   clientId: process.env.GITHUB_ID,
+    //   clientSecret: process.env.GITHUB_SECRET,
+    //    https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps
+    // }),
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,
