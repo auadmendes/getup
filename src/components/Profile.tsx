@@ -14,7 +14,7 @@ export function Profile() {
   function handleLoginNext() {
     signIn();
   }
-  //teste
+
   return (
     <div className={styles.profileContainer}>
       <div className={styles.profileImage}>
